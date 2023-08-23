@@ -1,0 +1,12 @@
+Lab 3
+
+1 . 1D convolution can be used to identify edges in an image by applying a filter to the image that is sensitive to changes in intensity. The filter is a small array of numbers that is moved across the image, and the output of the convolution operation is a new image that highlights the edges.Here are the steps involved in using 1D convolution to identify edges in an image:
+
+* Blur the image to reduce noise.
+* Apply a filter to the image that is sensitive to changes in intensity.
+* Find the local maxima of the output of the convolution operation. These are the points where the edge detection is strongest.
+
+3 . It leads to overfitting , It is going to memorize the data so many times , So it can lead up to overfitting . To prevent this we can use
+    early stopping , smaller learning rate , dropout . 
+
+The reason why mini-batch SGD can converge faster than BGD is that it takes more steps to converge with BGD. This is because BGD updates        the model parameters based on the entire training dataset, which can be noisy and misleading. Mini-batch SGD updates the model parameters based on a smaller subset of the training dataset, which is less noisy and more representative of the overall dataset.n addition, mini-batch SGD can also help to prevent the model from overfitting. This is because the model is not exposed to the entire training dataset at once, which can prevent it from memorizing the training data and not generalizing well to new data.
